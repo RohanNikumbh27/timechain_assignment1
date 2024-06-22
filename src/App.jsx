@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ContactList from "./components/ContactsList";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="text-black bg-white min-h-svh ">
+      <div className="mx-auto w-full sm:w-full md:w-1/2 bg-white min-h-svh pt-[38px] px-[24px]">
+        <h1 className="font-semibold text-2xl">My Contacts</h1>
+        {/* search-input-container */}
+        <div className="flex items-center justify-evenly w-full h-10 rounded-xl drop-shadow-input my-5 gap-4 bg-white">
+          <i className="fa-solid fa-magnifying-glass h-full inline-block p-[16px] w-5 text-[#B7B7B7]"></i>
+
+          <div className="inline-block w-[80%]">
+            <input
+              type="text"
+              className="w-full text-md active:border-none"
+              placeholder="Search by name or number"
+            ></input>
+          </div>
+        </div>
+
+        <ContactList />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
