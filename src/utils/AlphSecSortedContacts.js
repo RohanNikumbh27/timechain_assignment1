@@ -1,4 +1,4 @@
-export const AlphSecSortedContacts = (List, AlpArray) => {
+const AlphSecSortedContacts = (List, AlpArray) => {
   return iterateOverAlphabets(List, AlpArray);
 };
 
@@ -30,3 +30,5 @@ const iterateOverAlphabets = (List, alphabetsArray) => {
   // const TempArr2 = JSON.stringify(TempArr);
   return TempArr;
 };
+
+export default AlphSecSortedContacts;

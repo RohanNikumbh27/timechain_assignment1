@@ -2,8 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  background-color: black;
+}
 body {
   font-family: "Nunito", sans-serif;
+  background-color: white;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(60px) scale(.9);
+    opacity: 30%;
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 100%;
+  }
+}
+
+
+.animateIt {
+  animation: animate linear;
+  animation-timing-function: ease;
+  animation-duration: 0.2s;
+
+}
+
+.custom-bg {
+  background-color: rgba(154, 173, 190, 0.2)
 }
 
 :root {
@@ -28,4 +56,7 @@ input:focus-visible {
 
 .drop-shadow-input {
   filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.25));
+}
+.icons-drop-shadow {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.25));
 }
