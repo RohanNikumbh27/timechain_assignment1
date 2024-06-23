@@ -1,3 +1,4 @@
+export const ApiUrl = "https://6676800f145714a1bd71ee8f.mockapi.io/Contacts"
 export const alphabetsArray = [
   "a",
   "b",

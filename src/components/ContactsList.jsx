@@ -9,6 +9,7 @@ const ContactList = ({ List, searchQ }) => {
     const [searchedList, setSearchedList] = useState([]);
     const [finalArray, setFinalArray] = useState([]);
 
+
     useEffect(() => {
         getSearchedContacts(List, searchQ, setSearchedList);
     }, [List, searchQ])

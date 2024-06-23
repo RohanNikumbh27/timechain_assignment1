@@ -1,8 +1,9 @@
-# React + Vite
+#Steps to run
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Make sure you have Node js and VS code installed with git configured in it.
+- Type the following commands in the terminal
+  1. git clone https://github.com/RohanNikumbh27/timechain_assignment1.git
+  2. Type following commands in terminal
+     1. npm install
+     2. npm run dev
+- Go to web browser and type http://localhost:5173/ and you will be able to use this application

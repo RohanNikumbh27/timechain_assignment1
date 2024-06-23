@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ContactList from "./components/ContactsList";
 import SearchComp from "./components/SearchComp";
+import { ApiUrl } from "./constants/Constants";
+
 
 const App = () => {
 
@@ -12,7 +14,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://6676800f145714a1bd71ee8f.mockapi.io/Contacts");
+        const response = await axios.get(ApiUrl);
         setList(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
