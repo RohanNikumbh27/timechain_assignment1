@@ -8,7 +8,6 @@ const Person = ({ Contact }) => {
     setIsDetailShown(!isDetailShown);
   }
 
-  // console.log("Contact isFinite", Contact)
   return (
     <div className="text-black flex items-center gap-2 py-3 border-b-2 animateIt">
       {Contact.avatar ? (<img

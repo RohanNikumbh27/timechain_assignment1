@@ -3,7 +3,6 @@ const SearchComp = ({ searchQ, setSearchQ }) => {
     // const sQ = useRef("");
     const setNewSearchQFunction = (event) => {
         setSearchQ(event.target.value)
-        console.log("This", event.target.value)
     }
 
     return (
